@@ -15,7 +15,7 @@ print(f"Loaded {len(test_cases)} test cases.")
 def safety_shutdown_check(prompt):
     banned_words = ["hack", "attack", "kill", "explode", "ass", "a$$", "fuvk", "f*ck", "fuck"]
     if any(word in prompt.lower() for word in banned_words):
-        raise RuntimeError("SAFETY VIOLATION: Prompt contains banned words.")
+        raise RuntimeError("POLICY VIOLATION: Prompt contains banned words.")
 
 # ===== 4. Run stress tests =====
 results = []
@@ -55,5 +55,6 @@ df_results.to_csv("stress_results.csv", index=False)
 df_results.to_json("stress_results.json", orient="records", indent=2)
 
 print("✅ Stress test completed. Results saved.")
+
 
 
