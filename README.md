@@ -47,16 +47,16 @@ python test_generator.py
 python stress_runner.py
 
 
-<3 view our failure dashboard
+<3 our failure dashboard (for this we used plotly) (make sure stress_results.csv is at results/stress_results.csv)
+
+pip install dash pandas plotly
 
 python dashboard.py
 
-currently the dashboard runs a web app on a url link which will be generated
+currently the dashboard runs a web app on a url link which will be generated **once all these steps are done**
 
- http://127.0.0.1:8050
+ http://127.0.0.1:8050 (dashboard link)
 
-
-but for this the initial steps must be completed
 
 
 
