@@ -18,27 +18,27 @@ policy violation) and present them in a visual report.
 
 # What is in our repo???
 
-test_case_generator.py & test_generator.py — Scripts related to generating test cases
+🤍 test_case_generator.py & test_generator.py — Scripts related to generating test cases
 
-test_cases.csv — Generated test cases data file
+🤍 test_cases.csv — Generated test cases data file
 
-test.py — Your newer test case generator script (v2)
+🤍 test.py — Your newer test case generator script (v2)
 
-stress_runner.py — Runs tests on your model, logs results to results/stress_results.csv and .json
+🤍 stress_runner.py — Runs tests on your model, logs results to results/stress_results.csv and .json
 
-stress.py — Another stress script (double check if needed)
+🤍 stress.py — Another stress script (double check if needed)
 
-dashboard.py — Launches the interactive dashboard to visualize results live
+🤍 dashboard.py — Launches the interactive dashboard to visualize results live
 
-failure_dashboard.py — Generates PDF or static failure reports (optional)
+🤍 failure_dashboard.py — Generates PDF or static failure reports (optional)
 
-main.py — Your main orchestration file, probably calling everything sequentially
+🤍 main.py — Your main orchestration file, probably calling everything sequentially
 
-requirements.txt — Python dependencies
+🤍 requirements.txt — Python dependencies
 
-results/ — Folder with test results CSV & JSON
+🤍 results/ — Folder with test results CSV & JSON
 
-reports/ — Folder for dashboard HTML reports and PDFs
+🤍 reports/ — Folder for dashboard HTML reports and PDFs
 
 ------------------------------------------------------------------------------------------------------
 # let's begin :D
@@ -96,6 +96,16 @@ python dashboard.py
 currently the dashboard runs a web app on a url link which will be generated **once all these steps are done**
 
  http://127.0.0.1:8050 (dashboard link)
+
+------------------------------------------------------------------------------------------------------
+# 🛠 Notes
+🤍 If pip or scripts don't work, make sure your virtual environment is activated properly
+
+🤍 If you get missing module errors, install them manually inside venv via pip install <module>
+
+🤍 Make sure folders results and reports exist before running scripts or create them manually
+
+🤍 Use main.py if it orchestrates everything for you
 
 
 
