@@ -2,6 +2,7 @@
 hiii this project is to help us reach a failproof llm by stress testing it  by nadiya and jeslyn
 aka jnsyndicate
 
+------------------------------------------------------------------------------------------------------
 Goal:
 Create a stress-testing framework that bombards an LLM or agent with edge cases,
 malformed inputs, and tricky scenarios—then reports vulnerabilities, failure modes, and
@@ -14,6 +15,7 @@ characters, and prompt injections.
 local) and record responses, latency, and errors.
 3. Failure Analysis Dashboard – Classify failures (e.g., refusal, crash, incorrect output,
 policy violation) and present them in a visual report.
+------------------------------------------------------------------------------------------------------
 
 <3 to set up and run
 (in powershell on windows)
