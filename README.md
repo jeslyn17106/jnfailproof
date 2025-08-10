@@ -1,5 +1,5 @@
 # jnfailproof
-hiii welcome to the ultimate ai stress test generator (with an interactive failure analysis dashboard !!!) by nadiya and jeslyn aka **JNSYNDICATE**
+hiii welcome to **JNFAILPROOF** the ultimate ai stress test generator (with an interactive failure analysis dashboard !!!) by nadiya and jeslyn aka **JNSYNDICATE**
 
 ------------------------------------------------------------------------------------------------------
 # Goal:
