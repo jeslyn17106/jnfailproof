@@ -1,9 +1,8 @@
 # jnfailproof
-hiii this project is to help us reach a failproof llm by stress testing it  by nadiya and jeslyn
-aka jnsyndicate
+hiii welcome to the ultimate ai stress test generator (with a failure analysis dashboard !!!) by nadiya and jeslyn aka jnsyndicate
 
 ------------------------------------------------------------------------------------------------------
-Goal:
+# Goal:
 Create a stress-testing framework that bombards an LLM or agent with edge cases,
 malformed inputs, and tricky scenarios—then reports vulnerabilities, failure modes, and
 robustness metrics.
@@ -17,7 +16,34 @@ local) and record responses, latency, and errors.
 policy violation) and present them in a visual report.
 ------------------------------------------------------------------------------------------------------
 
-<3 to set up and run
+# What is in our repo???
+
+test_case_generator.py & test_generator.py — Scripts related to generating test cases
+
+test_cases.csv — Generated test cases data file
+
+test.py — Your newer test case generator script (v2)
+
+stress_runner.py — Runs tests on your model, logs results to results/stress_results.csv and .json
+
+stress.py — Another stress script (double check if needed)
+
+dashboard.py — Launches the interactive dashboard to visualize results live
+
+failure_dashboard.py — Generates PDF or static failure reports (optional)
+
+main.py — Your main orchestration file, probably calling everything sequentially
+
+requirements.txt — Python dependencies
+
+results/ — Folder with test results CSV & JSON
+
+reports/ — Folder for dashboard HTML reports and PDFs
+
+------------------------------------------------------------------------------------------------------
+# let's begin :D
+
+🤍 to set up and clone the repo
 (in powershell on windows)
 
 git clone https://github.com/jeslyn17106/jnfailproof.git
@@ -25,33 +51,47 @@ git clone https://github.com/jeslyn17106/jnfailproof.git
 cd jnfailproof
 
 
-<3 create a python virtual environment
+
+🤍 create a python virtual environment
 
 python -m venv venv
 
-.\venv\Scripts\Activate
+#Windows PowerShell:
 
+.\venv\Scripts\activate
 
-<3 install dependencies
+#Mac/Linux:
+
+source venv/bin/activate
+
+🤍 install dependencies
 
 pip install -r requirements.txt
 
 
-<3 running our testcase generator
+🤍 running our testcase generator 
 
-python test_generator.py
+( **funfact**: this creates test_cases.csv with over 15 test cases that go from normal inputs to *sneaky* edge cases }:) )
+
+python test.py
 
 
-<3 running our stress runner
+🤍 our automated stress runner and interactive failure dashboard that opens automatically cause its cool
+
+python run_all.py
+
+ # or 
+ 
+🤍 running our stress runner on our local ai model *huggingface*
 
 python stress_runner.py
 
 
-<3 our failure dashboard (for this we used plotly) (make sure stress_results.csv is at results/stress_results.csv)
+🤍 our failure dashboard (for this we used plotly) (make sure stress_results.csv is at results/stress_results.csv)
 
-pip install dash pandas plotly
 
 python dashboard.py
+
 
 currently the dashboard runs a web app on a url link which will be generated **once all these steps are done**
 
