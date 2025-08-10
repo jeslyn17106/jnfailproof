@@ -99,7 +99,7 @@ currently the dashboard runs a web app on a url link which will be generated **o
  http://127.0.0.1:8050 (dashboard link)
 
 ------------------------------------------------------------------------------------------------------
-# 🛠 Notes
+# 🎀 Notes
 🤍 If pip or scripts don't work, make sure your virtual environment is activated properly
 
 🤍 If you get missing module errors, install them manually inside venv via pip install <module>
