@@ -1,0 +1,6 @@
+transformers
+pandas
+matplotlib
+plotly
+reportlab
+dash
