@@ -17,23 +17,36 @@ policy violation) and present them in a visual report.
 
 <3 to set up and run
 (in powershell on windows)
+
 git clone https://github.com/jeslyn17106/jnfailproof.git
+
 cd jnfailproof
 
+
 <3 create a python virtual environment
+
 python -m venv venv
+
 .\venv\Scripts\Activate
 
+
 <3 install dependencies
+
 pip install -r requirements.txt
 
+
 <3 running our testcase generator
+
 python test_generator.py
 
+
 <3 running our stress runner
+
 python stress_runner.py
 
+
 <3 view our failure dashboard
+
 python dashboard.py
 
 currently the dashboard runs a web app on a url link which will be generated
